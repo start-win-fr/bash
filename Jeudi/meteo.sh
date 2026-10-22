@@ -24,6 +24,16 @@ echo "Nombre de jours : ${#temperatures[@]}"
 
 imax=0
 imin=0
+# 0 => 12
+# 1 => 15
+# 2 => 9
+# 3 => 21
+# 4 => 18
+# 5 => 7
+# 6 => 17
+# temperatures[i] permet d'aller chercher la valeur (la temperature) correspondant à l'emplacement i
+# La boucle commence i = 0 et augmente de 1 à chaque tour de boucle
+
 for i in "${!temperatures[@]}";do
     if (( temperatures[i] > temperatures[imax] )); then
         imax=$i
