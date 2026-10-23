@@ -8,7 +8,7 @@ compter_lettre() {
             (( compteur++ ))
         fi
     done
-    
+
     return $compteur
 }
 
